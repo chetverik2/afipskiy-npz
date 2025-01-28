@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test1488</title>
+
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body data-barba="wrapper">
+
+
+    <!-- Верхнее поле нпз -->
+    <div data-barba="container">
+    <div class="npz_head" >
+        <img src="npz_logo.png" alt="Логотип НПЗ" class="npz_logo">
+        <p class=nadpis_logo> Кадровое агентство АФИПСКИЙ НПЗ</p>
+    </div>
+    <!-- Верхнее поле нпз конец -->
+    <!-- Форма регистрации -->
+    <form id="main-form" class=form_class method="post">
+        <label for="name">Имя:</label>
+        <input type="text" name="name" placeholder="Имя:" id="name"><br><br>
+        <label for="password">Пароль:</label>
+        <input type="password" name="pass" placeholder="Пароль:" id="pass"><br><br>
+        <label for="repass">Проверка пароля:</label>
+        <input type="password" name="repass" placeholder="Проверка пароля" id="repass"><br><br>
+        <span>Пол:</span>
+        <input type="radio" name="state" id="male" value="Мужской">
+        <label for="male">Мужской</label>
+        <input type="radio" name="state" id="female" value="Женский">
+        <label for="female">Женский</label> <br><br>
+        <div id="error" class="error2"></div>
+        <input type="submit" name="submit" value="Готово">
+    </form>
+    <!-- Форма регистрации конец -->
+    <div class="center-block">
+        <h1 class=mb-4> Фото кота </h1>
+        <button class=" button_mb-3" id="button" type="button">
+            Открыть фото кота
+        </button>
+        <div class="card-content card-illustration" id="content">
+            Нажмите чтобы увидеть другого кота
+
+            <div>
+                <img class="image-container" id="image_click"
+                    src="https://limvet.ru/wp-content/uploads/2018/09/utas_siberian_cat_00.jpg" alt="Сибирская кошка">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="video-background">
+        <video autoplay muted loop class="bg-video">
+            <source src="npz_video2.mp4" type="video/mp4">
+
+            Ваш браузер не поддерживает видео.
+        </video>
+
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
